@@ -17,6 +17,6 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include('api.urls')),
+    path('admin/', admin.site.urls), ## this path point to admin user page
+    path('api/', include('api.urls')), ## this path point to "api.urls", and path is 127.0.0.1:8000/api/....xxxx
 ]
